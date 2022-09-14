@@ -23,8 +23,15 @@ const aCar = {
     }  
 };
 
-console.log(aCar.owner + " drives a " + aCar.type.make)
+aCar.milage = "10000";
+aCar.colour = "red";
+aCar.interior_fabric= {
+    texture: 'leather',
+    shade: 'cream'};
 
-console.log("Reg. = " + aCar.registration.year + "-" + aCar.registration.countryCode + "-" + aCar.registration.number)
+console.log("It is a " + aCar.colour + " car, " + aCar.milage + " mileage, with " + aCar.interior_fabric.texture + " interior"); 
+//console.log(aCar.owner + " drives a " + aCar.type.make)
 
-console.log('First owner : ' + aCar.previous_owners[0].name + " - " + aCar.previous_owners[0].address )
+//console.log("Reg. = " + aCar.registration.year + "-" + aCar.registration.countryCode + "-" + aCar.registration.number)
+
+//console.log('First owner : ' + aCar.previous_owners[0].name + " - " + aCar.previous_owners[0].address )
