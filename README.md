@@ -1,1 +1,1 @@
-# js-objects-lab
+# agile-software-practice
