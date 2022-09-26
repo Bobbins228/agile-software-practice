@@ -1,10 +1,11 @@
 fetch("https://jsonplaceholder.typicode.com/todos")
   .then(response => response.json())
-  .then(json => {
-     const titles = []; 
-     const todos = json // Complete this code
-     todos.forEach( (todo, index) => {
-        titles.push(todo.title)
+  .then(json => { 
+     const todos = json 
+     const titles = todos.map( todo => {
+         return {
+             title: todo.title
+         }
     })
     console.log(titles)
   })
